@@ -48,8 +48,8 @@ jobs:
         with:
           scan-type: 'fs'
           ignore-unfixed: true
-          format: 'sarif'
-          output: 'trivy-results.sarif'
+          format: 'html'
+          output: 'trivy-results.html'
           severity: 'CRITICAL'
       - uses: actions/upload-artifact@v3
         with:
